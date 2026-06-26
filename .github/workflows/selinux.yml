@@ -21,10 +21,6 @@ on:
         description: 'Nama Defconfig'
         required: true
         default: 'SolsticeRay_defconfig'
-      defconfig_name_2:
-        description: 'Nama Defconfig'
-        required: true
-        default: 'gki_defconfig'
       selinux_mode:
         description: 'Pilih Mode SELinux'
         required: true
