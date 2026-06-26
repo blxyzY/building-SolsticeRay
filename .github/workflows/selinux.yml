@@ -20,7 +20,7 @@ on:
       defconfig_name:
         description: 'Nama Defconfig'
         required: true
-        default: 'vendor/SolsticeRay_defconfig'
+        default: 'SolsticeRay_defconfig'
       selinux_mode:
         description: 'Pilih Mode SELinux'
         required: true
