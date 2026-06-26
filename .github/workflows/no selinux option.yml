@@ -20,7 +20,7 @@ on:
       defconfig_name:
         description: 'Nama Defconfig'
         required: true
-        default: 'a23_eur_open_defconfig'
+        default: 'SolsticeRay_defconfig'
 
 jobs:
   build-kernel:
