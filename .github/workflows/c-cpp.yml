@@ -156,6 +156,7 @@ jobs:
             CLANG_TRIPLE=aarch64-linux-gnu- \
             gki_defconfig \
             a23_eur_open_defconfig \
+            a23q-perf_defconfig
 
           make -j$(nproc --all) \
             O=$OUT_DIR \
@@ -231,7 +232,7 @@ jobs:
             - Repository: ${{ github.event.inputs.kernel_repo }}
             - Branch: ${{ github.event.inputs.kernel_branch || 'default-branch' }}
             - Compiler: ${{ github.event.inputs.clang_version }}
-            - Defconfig: gki_defconfig + a23_eur_open_defconfig
+            - Defconfig: gki_defconfig + a23_eur_open_defconfig + a23q-perf_defconfig
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
